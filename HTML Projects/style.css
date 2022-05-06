@@ -1,0 +1,51 @@
+.dot {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: inline-block;
+    animation: imgslidein 1s, bob 5s ease-in-out infinite;
+}
+@keyframes imgslidein{
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes bob{
+    0% {    
+        transform: translate(250%, 60%);
+    }
+    50% {
+        transform: translate(250%, 40%);
+    }
+    100%{
+        transform: translate(250%, 60%);
+    }    
+}
+
+#welcomebox{
+    margin-top: 200px;
+    margin-left: 30px;
+    border-radius: 10px 40px;
+    background: #77DD77;
+    padding: 50px;
+    width: 300px;
+    /*height: 110px; */
+    font-family: 'Fira Code';
+    font-size: 40px;
+    position: fixed;
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+@keyframes slidein{
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
